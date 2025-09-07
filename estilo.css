@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+background: linear-gradient(to right, #141618, #000000);
+  color: #fff;
+}
+
+/* Contenedor del nav */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 20px 350px;
+  background: #000000;
+}
+
+/* Logo y nombre */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%; /* redondear logo */
+  margin-right: 40px;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Menú */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 25px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #0616a1; /* efecto hover celeste */
+  
+}
+
+/* Botón Cotizar */
+.btn-cotizar {
+  background: linear-gradient(to right, #021897, #0671c9);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #000;
+}
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: left;
+  padding: 0 15%;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.subtitulo {
+  color: #00bfff; /* azul brillante */
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.botones {
+  display: flex;
+  gap: 15px;
+}
+.btn-secundario {
+  background: #111;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #444;
+}
+/* Estilos para la nueva sección de Misión & Visión */
+.mision-vision-section {
+    padding: 60px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centra el título "Mision & Vision" */
+    max-width: 1200px; /* Ancho máximo para el contenido */
+    margin: auto; /* Centra la sección en la página */
+}
+.mision-vision-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+/* Estilos para el contenedor de las tarjetas */
+.mission-vision-objectives {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Aumenta el espacio entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan */
+}
+/* Estilos para las tarjetas */
+.card {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 30px; /* Aumenta el padding para más espacio */
+    border-radius: 12px;
+    flex: 1;
+    max-width: 300px; /* Limita el ancho de cada tarjeta */
+    text-align: left; /* Alinea el texto a la izquierda, como en la imagen de referencia */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card .icon {
+  text-align: center; /* Centra el icono */
+  font-size: 2.5rem; /* Icono más grande */
+  margin-bottom: 15px;
+}
+
+
