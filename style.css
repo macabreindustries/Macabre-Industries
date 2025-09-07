@@ -256,3 +256,55 @@ background: linear-gradient(to right, #141618, #000000);
   color: #ccc;
   line-height: 1.5;
 }
+
+.footer {
+  background: #111; /* Fondo oscuro similar al nav */
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-top: 2px solid #0616a1; /* Delicado detalle azul */
+  margin-top: 25px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #00bfff; /* Azul brillante similar a los títulos */
+  margin-bottom: 15px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-list li {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-list li:hover {
+  color: #00bfff; /* Efecto hover similar a los enlaces del menú */
+}
+
+.footer-info {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.footer-copyright {
+  font-size: 13px;
+  color: #666;
+  letter-spacing: 1px;
+}
