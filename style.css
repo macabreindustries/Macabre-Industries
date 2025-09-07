@@ -153,3 +153,48 @@ background: linear-gradient(to right, #141618, #000000);
 }
 
 
+/* Portafolio */
+.portafolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 10%;
+}
+
+.portafolio-card {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 300px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portafolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+}
+
+.portafolio-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.portafolio-content {
+  padding: 20px;
+}
+
+.portafolio-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #00bfff;
+}
+
+.portafolio-content p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
