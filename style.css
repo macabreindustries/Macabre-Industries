@@ -54,7 +54,7 @@ background: linear-gradient(to right, #141618, #000000);
 }
 
 .menu a:hover {
-  color: #0616a1; /* efecto hover celeste */
+  color: #0e98f3; /* efecto hover celeste */
   
 }
 
@@ -64,7 +64,7 @@ background: linear-gradient(to right, #141618, #000000);
   padding: 8px 15px;
   border-radius: 20px;
   font-weight: bold;
-  color: #000;
+  color: #000000;
 }
 /* Hero */
 .hero {
