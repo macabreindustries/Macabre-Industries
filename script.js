@@ -18,11 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // -------- Theme Toggle --------
   const currentTheme = localStorage.getItem("theme") || "light";
-  if (currentTheme === "dark") body.classList.add("dark");
+  if (currentTheme === "dark") {
+    body.classList.add("dark");
+  } else {
+    body.classList.add("white");  // Asegura que el preloader en modo claro se aplique
+  }
   themeToggle.checked = currentTheme === "dark";
 
   themeToggle.addEventListener("change", () => {
     body.classList.toggle("dark");
+    body.classList.toggle("white");  // Agregar la clase white cuando se cambia el tema a claro
     const theme = body.classList.contains("dark") ? "dark" : "light";
     localStorage.setItem("theme", theme);
   });
