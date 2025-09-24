@@ -1,145 +1,122 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="img/logo.png" type="img" class="titulito">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
   <title>Macabre Industries</title>
 </head>
 <body>
-  <nav class="menu-container">
-    <div class="logo-container">
-      <img src="img/logo.png" alt="Macabre Industries Logo" class="logo">
-      <span class="brand-name">Macabre Industries</span>
-    </div>
-    <ul class="menu">
-      <li><a href="#mision">Misión & Visión</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#portafolio">Portafolio</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <li><a href="#cotizar" class="btn-cotizar">Cotizar</a></li>
-    </ul>
-  </nav>
-  <header class="hero">
-  <div class="hero-content">
-    <span class="subtitulo">INGENIERÍA DE SOFTWARE DE ALTO DESEMPEÑO</span>
-    <h1>Empresa de Calidad:<br> velocidad, precisión y diseño extremo.</h1>
-    <p>Construimos plataformas digitales con estándares de competición: arquitectura sólida, rendimiento aerodinámico y estética que marca tendencia.</p>
-    <div class="botones">
-      <a href="#portafolio" class="btn-secundario">Ver proyectos</a>
-    </div>
-  </div>
-</header>
-<section class="mision-vision-section">
-  <h2>Mision & Vision</h2>
-  <div class="mission-vision-objectives">
-    <div class="card">
-      <h3>Misión 🎯</h3>
-      <p>Crear e implementar tecnología que trascienda los límites actuales, construyendo soluciones inteligentes que transformen el presente en un futuro próspero y sostenible.  </p>
-    </div>
-    <div class="card">
-      <h3>Visión 👁️</h3>
-      <p>Convertirnos en un referente global de innovación tecnológica, siendo la fuerza impulsora que redefine la relación entre humanidad y progreso.</p>
-    </div>
-    <div class="card">
-      <h3>Objetivo General 📝</h3>
-      <p>En un plazo máximo de 4 meses, Macabre Industries desarrollará y validará propuestas de soluciones de software innovadoras que integren inteligencia artificial y tecnologías emergentes, con el fin de impulsar el crecimiento de la digitalización en la sociedad y ofrecer herramientas que fomenten el progreso, la inclusión y el acceso equitativo a la tecnología, estableciendo las bases para posicionarse como un referente en innovación tecnológica.</p>
-    </div>
-  </div>
-</section>
-<section id="servicios" class="servicios-section">
-  <h2>Servicios que Ofrecemos</h2>
-  <div class="servicios-container">
-    <!-- Servicio 1 -->
-    <div class="servicio-card">
-      <div class="icon">💻</div>
-      <h3>Desarrollo Web</h3>
-      <p>Diseño y programación de sitios web modernos, optimizados y adaptados a las necesidades de tu negocio.</p>
-    </div>
-    <!-- Servicio 2 -->
-    <div class="servicio-card">
-      <div class="icon">📱</div>
-      <h3>Apps Móviles</h3>
-      <p>Aplicaciones móviles innovadoras, rápidas y seguras para Android e iOS.</p>
-    </div>
-    <!-- Servicio 3 -->
-    <div class="servicio-card">
-      <div class="icon">🤖</div>
-      <h3>Inteligencia Artificial</h3>
-      <p>Integración de soluciones con IA para automatizar procesos y mejorar la toma de decisiones.</p>
-    </div>
-    <!-- Servicio 4 -->
-    <div class="servicio-card">
-      <div class="icon">☁️</div>
-      <h3>Cloud & DevOps</h3>
-      <p>Implementación de infraestructura en la nube con alta disponibilidad y escalabilidad.</p>
-    </div>
-  </div>
-</section>
-<section id="portafolio" class="Portafolio">
-  <h2 style="text-align:center; font-size:2.5rem; margin-bottom:40px;">Portafolio</h2>
-  
-  <div class="portafolio-container">
-    
-    <!-- Proyecto 1 -->
-    <div class="portafolio-card">
-      <img src="img/coche.jpg" alt="App corporativa" class="portafolio-img">
-      <div class="portafolio-content">
-        <h3>CyberTask Manager</h3>
-        <p>Aplicación de productividad desarrollada para grandes equipos, con IA integrada para optimizar flujos de trabajo.</p>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+
+  <!-- Top navigation -->
+   <div id="preloader">
+  <div class="loader"></div>
+</div>
+  <header class="site-header" role="banner">
+    <div class="nav-wrap">
+      <div class="logo-container">
+        <a href="#" class="brand-link">
+          <img src="img/logo.png" alt="Macabre Industries Logo" class="logo" />
+          <span class="brand-name">Macabre Industries</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <ul id="primary-menu" class="menu">
+        <li><a href="#mision">Misión &amp; Visión</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#cotizar" class="btn-cotizar">Cotizar</a></li>
+      </ul>
+
+      <!-- Theme toggle -->
+      <div class="theme-toggle-wrap">
+        <label class="theme-switch">
+          <span class="theme-icon theme-icon-sun">☀️</span>
+          <input id="theme-toggle" type="checkbox" />
+          <span class="switch-knob"></span>
+          <span class="theme-icon theme-icon-moon">🌙</span>
+        </label>
       </div>
     </div>
+  </header>
 
-    <!-- Proyecto 2 -->
-    <div class="portafolio-card">
-      <img src="img/IA.jpg" alt="Página web e-commerce" class="portafolio-img">
-      <div class="portafolio-content">
-        <h3>DarkMarket</h3>
-        <p>Plataforma de e-commerce con diseño minimalista y sistema de pagos seguros para negocios digitales.</p>
+  <main id="main-content" tabindex="-1">
+    <!-- Hero -->
+    <section class="hero" data-parallax>
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <span class="subtitulo">INGENIERÍA DE SOFTWARE DE ALTO DESEMPEÑO</span>
+        <h1>Empresa de Calidad:<br /> velocidad, precisión y diseño extremo.</h1>
+        <p>Construimos plataformas digitales con estándares de competición: arquitectura sólida, rendimiento aerodinámico y estética que marca tendencia.</p>
+        <a href="#portafolio" class="btn-secundario">Ver proyectos</a>
       </div>
-    </div>
+    </section>
 
-    <!-- Proyecto 3 -->
-    <div class="portafolio-card">
-      <img src="img/celular.jpeg" alt="App móvil" class="portafolio-img">
-      <div class="portafolio-content">
-        <h3>GhostChat</h3>
-        <p>Aplicación de mensajería encriptada con enfoque en privacidad y comunicación anónima.</p>
+    <!-- Misión & Visión -->
+    <section id="mision" class="mision-vision-section container" data-reveal>
+      <h2>Misión &amp; Visión</h2>
+      <div class="mission-vision-objectives">
+        <article class="card">
+          <h3>Misión 🎯</h3>
+          <p>Crear e implementar tecnología que trascienda los límites actuales, construyendo soluciones inteligentes que transformen el presente en un futuro próspero y sostenible.</p>
+        </article>
+        <article class="card">
+          <h3>Visión 👁️</h3>
+          <p>Convertirnos en un referente global de innovación tecnológica, siendo la fuerza impulsora que redefine la relación entre humanidad y progreso.</p>
+        </article>
+        <article class="card">
+          <h3>Objetivo General 📝</h3>
+          <p>En un plazo máximo de 4 meses, Macabre Industries desarrollará y validará propuestas de soluciones de software innovadoras que integren inteligencia artificial y tecnologías emergentes...</p>
+        </article>
       </div>
-    </div>
+    </section>
 
-    <!-- Proyecto 4 -->
-    <div class="portafolio-card">
-      <img src="img/trabajo.jpg" alt="Página institucional" class="portafolio-img">
-      <div class="portafolio-content">
-        <h3>NeoWeb</h3>
-        <p>Diseño web corporativo para empresas tecnológicas, con animaciones interactivas y UI futurista.</p>
+    <!-- Servicios -->
+    <section id="servicios" class="servicios-section container" data-reveal>
+      <h2>Servicios que Ofrecemos</h2>
+      <div class="servicios-container">
+        <div class="servicio-card"><div class="icon">💻</div><h3>Desarrollo Web</h3><p>Diseño y programación de sitios web modernos.</p></div>
+        <div class="servicio-card"><div class="icon">📱</div><h3>Apps Móviles</h3><p>Aplicaciones móviles innovadoras y seguras.</p></div>
+        <div class="servicio-card"><div class="icon">🤖</div><h3>Inteligencia Artificial</h3><p>Integración de soluciones con IA.</p></div>
+        <div class="servicio-card"><div class="icon">☁️</div><h3>Cloud & DevOps</h3><p>Infraestructura en la nube con alta disponibilidad.</p></div>
       </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portafolio" class="portafolio container" data-reveal>
+      <h2 class="centered-heading">Portafolio</h2>
+      <div class="portafolio-container">
+        <article class="portafolio-card"><img src="img/coche.jpg" alt="CyberTask Manager"><h3>CyberTask Manager</h3><p>Aplicación de productividad con IA integrada.</p></article>
+        <article class="portafolio-card"><img src="img/IA.jpg" alt="DarkMarket"><h3>DarkMarket</h3><p>Plataforma de e-commerce segura y minimalista.</p></article>
+        <article class="portafolio-card"><img src="img/celular.jpeg" alt="GhostChat"><h3>GhostChat</h3><p>Aplicación de mensajería encriptada.</p></article>
+        <article class="portafolio-card"><img src="img/trabajo.jpg" alt="NeoWeb"><h3>NeoWeb</h3><p>Diseño web corporativo futurista.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content container">
+      <p class="footer-title">Desarrolladores</p>
+      <ul class="footer-list">
+        <li>Curiel García Juan Jesús</li>
+        <li>López Medina Leonardo Daniel</li>
+        <li>Gutiérrez Zamora Luis Uziel</li>
+        <li>Patiño Villa Aldo Yahir</li>
+      </ul>
+      <p class="footer-info">Desarrollado en: CECyT 9 - IPN</p>
+      <p class="footer-copyright">&copy; Macabre Industries. Todos los derechos reservados.</p>
     </div>
+  </footer>
 
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-content">
-    <p class="footer-title">Desarrolladores</p>
-    <ul class="footer-list">
-      <li>Curiel García Juan Jesús</li>
-      <li>López Medina Leonardo Daniel</li>
-      <li>Gutiérrez Zamora Luis Uziel</li>
-      <li>Patiño Villa Aldo Yahir</li>
-    </ul>
-    <p class="footer-info">Desarrollado en: CECyT 9 - IPN</p>
-    <p class="footer-copyright">&copy; Macabre Industries. Todos los derechos reservados.</p>
-  </div>
-</footer>
-
-
-
-
-    </div>
-  </div>
-</header>
+  <script defer src="script.js"></script>
 </body>
 </html>
