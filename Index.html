@@ -1,122 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="icon" href="img/logo.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Macabre Industries</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Macabre Industries — Landing</title>
+  <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
-  <!-- Skip link for accessibility -->
-  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <!-- Loader -->
+  <div id="loader"><div class="logo-anim">Macabre Industries</div></div>
+  <div class="historia-full-bg" aria-hidden="true"></div>
 
-  <!-- Top navigation -->
-   <div id="preloader">
-  <div class="loader"></div>
-</div>
-  <header class="site-header" role="banner">
-    <div class="nav-wrap">
-      <div class="logo-container">
-        <a href="#" class="brand-link">
-          <img src="img/logo.png" alt="Macabre Industries Logo" class="logo" />
-          <span class="brand-name">Macabre Industries</span>
-        </a>
+  <!-- Header -->
+  <header id="mainHeader">
+    <nav>
+      <div class="nav-left">
+        <a href="#about">Nosotros</a>
+        <a href="#historia">Historia</a>
       </div>
-
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
-        <span class="hamburger"></span>
-      </button>
-
-      <ul id="primary-menu" class="menu">
-        <li><a href="#mision">Misión &amp; Visión</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#portafolio">Portafolio</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#cotizar" class="btn-cotizar">Cotizar</a></li>
-      </ul>
-
-      <!-- Theme toggle -->
-      <div class="theme-toggle-wrap">
-        <label class="theme-switch">
-          <span class="theme-icon theme-icon-sun">☀️</span>
-          <input id="theme-toggle" type="checkbox" />
-          <span class="switch-knob"></span>
-          <span class="theme-icon theme-icon-moon">🌙</span>
-        </label>
+      <div class="logo-center">
+  <img src="img/logo.png" alt="Logo Macabre Industries">
       </div>
-    </div>
+      <div class="nav-right">
+        <a href="#services">Servicios</a>
+        <a href="#portfolio">Portafolio</a>
+      </div>
+    </nav>
   </header>
 
-  <main id="main-content" tabindex="-1">
-    <!-- Hero -->
-    <section class="hero" data-parallax>
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content container">
-        <span class="subtitulo">INGENIERÍA DE SOFTWARE DE ALTO DESEMPEÑO</span>
-        <h1>Empresa de Calidad:<br /> velocidad, precisión y diseño extremo.</h1>
-        <p>Construimos plataformas digitales con estándares de competición: arquitectura sólida, rendimiento aerodinámico y estética que marca tendencia.</p>
-        <a href="#portafolio" class="btn-secundario">Ver proyectos</a>
-      </div>
-    </section>
+  <!-- Hero -->
+  <section class="hero" id="home">
+  <video id="heroVideo" autoplay muted loop playsinline preload="auto" src="videos/macabre4k.mp4"></video>
+    
+  </section>
 
-    <!-- Misión & Visión -->
-    <section id="mision" class="mision-vision-section container" data-reveal>
-      <h2>Misión &amp; Visión</h2>
-      <div class="mission-vision-objectives">
-        <article class="card">
-          <h3>Misión 🎯</h3>
-          <p>Crear e implementar tecnología que trascienda los límites actuales, construyendo soluciones inteligentes que transformen el presente en un futuro próspero y sostenible.</p>
-        </article>
-        <article class="card">
-          <h3>Visión 👁️</h3>
-          <p>Convertirnos en un referente global de innovación tecnológica, siendo la fuerza impulsora que redefine la relación entre humanidad y progreso.</p>
-        </article>
-        <article class="card">
-          <h3>Objetivo General 📝</h3>
-          <p>En un plazo máximo de 4 meses, Macabre Industries desarrollará y validará propuestas de soluciones de software innovadoras que integren inteligencia artificial y tecnologías emergentes...</p>
-        </article>
+  <!-- Carrusel -->
+  <section class="carrusel" id="about">
+    <div class="carrusel-container">
+      <div class="slide active">
+        <div class="text">
+          <h2>Misión</h2>
+          <p>Crear soluciones digitales que impulsen la educación con diseño y precisión tecnológica.</p>
+        </div>
+  <div class="image"><img src="img/mision.jpg" alt="Misión"></div>
       </div>
-    </section>
+      <div class="slide">
+        <div class="text">
+          <h2>Visión</h2>
+          <p>Convertirnos en referentes en innovación educativa y desarrollo digital a nivel internacional.</p>
+        </div>
+  <div class="image"><img src="img/vision.jpeg" alt="Visión"></div>
+      </div>
+      <div class="slide">
+        <div class="text">
+          <h2>Objetivos</h2>
+          <ul>
+            <li>Optimizar experiencias de aprendizaje.</li>
+            <li>Proveer herramientas interactivas.</li>
+            <li>Innovar con enfoque profesional.</li>
+          </ul>
+        </div>
+  <div class="image"><img src="img/objetivo.png" alt="Objetivos"></div>
+      </div>
 
-    <!-- Servicios -->
-    <section id="servicios" class="servicios-section container" data-reveal>
-      <h2>Servicios que Ofrecemos</h2>
-      <div class="servicios-container">
-        <div class="servicio-card"><div class="icon">💻</div><h3>Desarrollo Web</h3><p>Diseño y programación de sitios web modernos.</p></div>
-        <div class="servicio-card"><div class="icon">📱</div><h3>Apps Móviles</h3><p>Aplicaciones móviles innovadoras y seguras.</p></div>
-        <div class="servicio-card"><div class="icon">🤖</div><h3>Inteligencia Artificial</h3><p>Integración de soluciones con IA.</p></div>
-        <div class="servicio-card"><div class="icon">☁️</div><h3>Cloud & DevOps</h3><p>Infraestructura en la nube con alta disponibilidad.</p></div>
-      </div>
-    </section>
+      <!-- Flechas -->
+      <button class="control prev">‹</button>
+      <button class="control next">›</button>
+    </div>
 
-    <!-- Portafolio -->
-    <section id="portafolio" class="portafolio container" data-reveal>
-      <h2 class="centered-heading">Portafolio</h2>
-      <div class="portafolio-container">
-        <article class="portafolio-card"><img src="img/coche.jpg" alt="CyberTask Manager"><h3>CyberTask Manager</h3><p>Aplicación de productividad con IA integrada.</p></article>
-        <article class="portafolio-card"><img src="img/IA.jpg" alt="DarkMarket"><h3>DarkMarket</h3><p>Plataforma de e-commerce segura y minimalista.</p></article>
-        <article class="portafolio-card"><img src="img/celular.jpeg" alt="GhostChat"><h3>GhostChat</h3><p>Aplicación de mensajería encriptada.</p></article>
-        <article class="portafolio-card"><img src="img/trabajo.jpg" alt="NeoWeb"><h3>NeoWeb</h3><p>Diseño web corporativo futurista.</p></article>
+    <!-- Dots centrados debajo del carrusel -->
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- HISTORIA: títulos centrados y overlay clickable -->
+  <section id="historia" class="historia" aria-label="Historia">
+    <div class="historia-inner short-titles" role="presentation">
+      <div class="historia-titles" role="tablist" aria-label="Filosofía y Valores">
+        <h2 class="historia-title" role="button" tabindex="0" aria-controls="historia-panel" data-key="FILOSOFÍA">FILOSOFÍA</h2>
+        <div class="historia-sep" aria-hidden="true">|</div>
+        <h2 class="historia-title" role="button" tabindex="0" aria-controls="historia-panel" data-key="VALORES">VALORES</h2>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer-content container">
-      <p class="footer-title">Desarrolladores</p>
-      <ul class="footer-list">
-        <li>Curiel García Juan Jesús</li>
-        <li>López Medina Leonardo Daniel</li>
-        <li>Gutiérrez Zamora Luis Uziel</li>
-        <li>Patiño Villa Aldo Yahir</li>
-      </ul>
-      <p class="footer-info">Desarrollado en: CECyT 9 - IPN</p>
-      <p class="footer-copyright">&copy; Macabre Industries. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- overlay expandible -->
+    <div class="historia-expand" id="historia-panel" aria-hidden="true" role="region" aria-label="Detalle historia">
+      <div class="historia-expand-inner" role="dialog" aria-modal="true">
+        <button class="historia-expand-close" aria-label="Cerrar">✕</button>
+        <h3 class="expand-title"></h3>
+        <div class="expand-body"></div>
+      </div>
+    </div>
+  </section>
+  <!-- SERVICES: Porsche-like large image cards (replaces placeholder) -->
+  <section id="services" class="services-section services-porsche">
+    <div class="services-wrap">
+      <header class="services-header">
+
+        <p>Soluciones y servicios diseñados con pasión por la precisión.</p>
+      </header>
+
+      <div class="services-grid" role="list">
+        <article class="service-card" role="listitem">
+          <a href="#" class="card-link" data-service="consultoria">
+            <div class="card-media"><img src="img/servicio1.jpg" alt="Consultoría técnica"></div>
+            <div class="card-overlay">
+              <div class="card-title">Consultoría técnica</div>
+              <div class="card-arrow">→</div>
+            </div>
+          </a>
+        </article>
+
+        <article class="service-card" role="listitem">
+          <a href="#" class="card-link" data-service="desarrollo">
+            <div class="card-media"><img src="img/servicio2.jpg" alt="Desarrollo a medida"></div>
+            <div class="card-overlay">
+              <div class="card-title">Desarrollo a medida</div>
+              <div class="card-arrow">→</div>
+            </div>
+          </a>
+        </article>
+
+        <article class="service-card" role="listitem">
+          <a href="#" class="card-link" data-service="integracion">
+            <div class="card-media"><img src="img/servicio3.jpeg" alt="Integración y despliegue"></div>
+            <div class="card-overlay">
+              <div class="card-title">Integración & despliegue</div>
+              <div class="card-arrow">→</div>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- PORTFOLIO: Porsche-like hover-to-play previews -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="portfolio-wrap">
+      <header class="portfolio-header">
+        <h1>PORTAFOLIO</h1>
+        <p>Proyectos destacados — pasa el ratón para una vista previa en video.</p>
+      </header>
+
+      <div class="portfolio-grid" role="list">
+        <article class="portfolio-card" role="listitem">
+          <a href="#" class="portfolio-link" data-video="videos/portafoliovideo1.mp4">
+            <div class="portfolio-media"><img src="img/porta1.jpg" alt="Proyecto A"></div>
+            <div class="portfolio-caption"><div class="portfolio-title">LOGICARGO</div></div>
+          </a>
+        </article>
+
+        <article class="portfolio-card" role="listitem">
+          <a href="#" class="portfolio-link" data-video="videos/portafoliovideo2.mp4">
+            <div class="portfolio-media"><img src="img/porta2.jpg" alt="Proyecto B"></div>
+            <div class="portfolio-caption"><div class="portfolio-title">ADMINISTRADOR DE TAREAS</div></div>
+          </a>
+        </article>
+
+        <article class="portfolio-card" role="listitem">
+          <a href="#" class="portfolio-link" data-video="videos/portafoliovideo3.mp4">
+            <div class="portfolio-media"><img src="img/porta3.jpg" alt="Proyecto C"></div>
+            <div class="portfolio-caption"><div class="portfolio-title">APP EDUCATIVA</div></div>
+          </a>
+        </article>
+            <article class="portfolio-card" role="listitem">
+          <a href="#" class="portfolio-link" data-video="videos/portafoliovideo4.mp4">
+            <div class="portfolio-media"><img src="img/porta4.jpg" alt="Proyecto C"></div>
+            <div class="portfolio-caption"><div class="portfolio-title">SMART WATCH</div></div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- overlay that darkens the page when a portfolio preview is active -->
+  <div id="portfolioOverlay" class="portfolio-overlay-bg" aria-hidden="true"></div>
+  
+  <!-- Footer: estilo profesional, fondo negro -->
+  <footer class="site-footer" role="contentinfo" aria-label="Pie de página">
+    <div class="footer-inner">
+      <div class="footer-col contact">
+        <h4>Contáctanos</h4>
+        <p class="muted">Estamos disponibles para proyectos y consultas.</p>
+        <p><strong>Email:</strong> <a href="mailto:macabreindustries@gmail.com">macabreindustries@gmail.com</a></p>
+        <p><strong>Tel:</strong> <a href="tel:+521234567890">+52 1 234 567 890</a></p>
+      </div>
+
+      <div class="footer-col address">
+        <h4>Ubicación</h4>
+        <p class="muted">Cecyt 9 "Juan de Dios Batiz"</p>
+        <p>Av. de las Torres 101,<br> Col. Nueva Industrial Vallejo,<br> Alcaldía Gustavo A. Madero, C.P. 07700,<br> Ciudad de México, México.</p>
+      </div>
+
+      <div class="footer-col links">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#about">Nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="copy">© <span id="year"></span> Macabre Industries. Todos los derechos reservados.</div>
+      <div class="terms"><a href="#">Aviso legal</a> · <a href="#">Política de privacidad</a></div>
     </div>
   </footer>
 
-  <script defer src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
